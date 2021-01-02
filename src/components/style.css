@@ -1,0 +1,128 @@
+
+.app-header {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    background-color: #d1d6df;
+    color: white;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .heading-text {
+    color: rgb(14, 10, 10);
+    font-size: 42px;
+    font-weight: bolder;
+    text-align: center;
+    margin: 50px;
+  }
+  .apptext-1 {
+    color: rgb(92, 223, 201);
+  }
+  .apptext-2 {
+    color: #4ddb40;
+  }
+  
+  .square {
+    min-width: 80px;
+    min-height: 80px;
+    font-size: 55px;
+    text-align: center;
+    color: #010202a2;
+    font-weight: bolder;
+    padding: 10%;
+  }
+  
+  .fc-aqua {
+    color: #5bf1f1;
+  }
+  
+  .fc-white {
+    color: rgb(226, 137, 35);
+  }
+  
+  .fw-600 {
+    font-weight: bolder;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .jc-center {
+    justify-content: center;
+  }
+  
+  .b-bottom-right {
+    border-right: 2px solid #010202a2;
+    border-bottom: 2px solid #010202a2;
+  }
+  
+  .b-bottom {
+    border-bottom: 2px solid #010202a2;
+  }
+  
+  .b-right {
+    border-right: 2px solid #010202a2;
+  }
+  
+  .clear-button {
+    font-size: 20px;
+    width: 200px;
+    height: 35px;
+    background-color: #4ddb40;
+    border: none ;
+    border-radius: 20px;
+    margin: 40px auto 10px auto;
+  }
+  
+  
+  @media only screen and (max-width: 600px) {
+    .heading-text {
+        font-size: 30px;
+        font-weight: bolder;
+        text-align: center;
+        margin: 60px 10px;
+    }
+  
+    .square {
+        min-width: 60px;
+        min-height: 60px;
+        font-size: 22px;
+        font-weight: bolder;
+        padding: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+  
+    .b-bottom-right {
+        border-right: 2px solid #010202a2;
+        border-bottom: 2px solid #010202a2;
+    }
+  
+    .b-bottom {
+        border-bottom: 2px solid #010202a2;
+    }
+  
+    .b-right {
+        border-right: 2px solid #010202a2;
+    }
+  
+    .clear-button {
+        font-size: 20px;
+        width: 40%;
+        height: 30px;
+        background-color: #4ddb40;
+        border: none ;
+        border-radius: 20px;
+        margin: 40px auto 10px auto;
+    }
+  }
