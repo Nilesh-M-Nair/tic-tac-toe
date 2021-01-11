@@ -1,45 +1,41 @@
-
 .app-header {
     display: flex;
-    min-height: 100vh;
+    min-height: 100%;
     flex-direction: column;
     text-align: center;
-    background-color: #d1d6df;
+    background-color: white;
     color: white;
     justify-content: center;
     align-items: center;
+    border-radius: 30px ;
   }
-  
-  .heading-text {
-    color: rgb(14, 10, 10);
-    font-size: 42px;
-    font-weight: bolder;
-    text-align: center;
-    margin: 50px;
-  }
-  .apptext-1 {
-    color: rgb(92, 223, 201);
-  }
-  .apptext-2 {
-    color: #4ddb40;
-  }
-  
+
   .square {
     min-width: 80px;
     min-height: 80px;
     font-size: 55px;
     text-align: center;
     color: #010202a2;
-    font-weight: bolder;
+    font-weight: 900;
     padding: 10%;
   }
   
   .fc-aqua {
-    color: #5bf1f1;
+    color: #3778fa;
+    text-shadow: 0px 15px 20px #3778fa;
+    background: -webkit-linear-gradient(#27e9f7, #276cf5);
+    background-clip:padding-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   
   .fc-white {
-    color: rgb(226, 137, 35);
+    color: #ef7536;
+    text-shadow: 0px 10px 20px #ef7536;
+    background: -webkit-linear-gradient(#f8d849, #f16a4b);
+    background-clip:padding-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   
   .fw-600 {
@@ -85,17 +81,10 @@
   
   
   @media only screen and (max-width: 600px) {
-    .heading-text {
-        font-size: 30px;
-        font-weight: bolder;
-        text-align: center;
-        margin: 60px 10px;
-    }
-  
     .square {
-        min-width: 60px;
-        min-height: 60px;
-        font-size: 22px;
+        min-width: 80px;
+        min-height: 80px;
+        font-size: 55px;
         font-weight: bolder;
         padding: 10%;
         display: flex;
@@ -116,6 +105,33 @@
         border-right: 2px solid #010202a2;
     }
   
+    .clear-button {
+        font-size: 20px;
+        width: 40%;
+        height: 30px;
+        background-color: #4ddb40;
+        border: none ;
+        border-radius: 20px;
+        margin: 40px auto 10px auto;
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+    
+  
+    .square {
+        min-width: 60px;
+        min-height: 60px;
+        font-size: 40px;
+    }
+  }
+
+  @media only screen and (max-width: 320px) {
+    .square {
+        min-width: 40px;
+        min-height: 40px;
+        font-size: 30px;
+    }
     .clear-button {
         font-size: 20px;
         width: 40%;
