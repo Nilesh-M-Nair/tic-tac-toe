@@ -62,10 +62,11 @@ function Game(){
               <span className ="apptext-2">Ninja</span> - Assignment 2
             </p>
             <span className='scorecard'>
+                <span className='score' >X won  </span>
                 <span className='scorecard__shadow'>
-                <span className='score' >X won - <span className='color1'>{xUserWon}</span></span>
-                <span className='score'>Y won - <span className='color2'>{yUserWon}</span></span>
+                <span className='color1'>{xUserWon}</span> - <span className='color2'>{yUserWon}</span>
                 </span>
+                <span className='score'>  Y won</span>
             </span>
             <Card handleOnClick ={handleOnClick} gameState={gameState}/>
             <button className="clear-button" onClick={clearGame}>Reset</button>
