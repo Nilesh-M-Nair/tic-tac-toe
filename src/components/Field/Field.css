@@ -15,12 +15,12 @@
     min-height: 80px;
     font-size: 55px;
     text-align: center;
-    color: #010202a2;
+    color: #0102024b;
     font-weight: 900;
     padding: 10%;
   }
   
-  .fc-aqua {
+  /* .fc-aqua {
     color: #3778fa;
     text-shadow: 0px 15px 20px #3778fa;
     background: -webkit-linear-gradient(#27e9f7, #276cf5);
@@ -36,7 +36,7 @@
     background-clip:padding-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
+  } */
   
   .fw-600 {
     font-weight: bolder;
@@ -53,20 +53,27 @@
   }
   
   .jc-center {
+    align-items: center;
     justify-content: center;
   }
   
   .b-bottom-right {
-    border-right: 2px solid #010202a2;
-    border-bottom: 2px solid #010202a2;
+    border-right: 2px solid #0102024b;
+    border-bottom: 2px solid #0102024b;
+    align-items: center;
+    justify-content: center;
   }
   
   .b-bottom {
-    border-bottom: 2px solid #010202a2;
+    border-bottom: 2px solid #0102024b;
+    align-items: center;
+    justify-content: center;
   }
   
   .b-right {
-    border-right: 2px solid #010202a2;
+    border-right: 2px solid #0102024b;
+    align-items: center;
+    justify-content: center;
   }
   
   .clear-button {
@@ -93,16 +100,16 @@
     }
   
     .b-bottom-right {
-        border-right: 2px solid #010202a2;
-        border-bottom: 2px solid #010202a2;
+        border-right: 2px solid #0102024b;
+        border-bottom: 2px solid #0102024b;
     }
   
     .b-bottom {
-        border-bottom: 2px solid #010202a2;
+        border-bottom: 2px solid #0102024b;
     }
   
     .b-right {
-        border-right: 2px solid #010202a2;
+        border-right: 2px solid #0102024b;
     }
   }
 
@@ -111,7 +118,6 @@
     .square {
         min-width: 60px;
         min-height: 60px;
-        font-size: 40px;
     }
   }
 
@@ -119,7 +125,6 @@
     .square {
         min-width: 40px;
         min-height: 40px;
-        font-size: 30px;
     }
     .clear-button {
         font-size: 20px;

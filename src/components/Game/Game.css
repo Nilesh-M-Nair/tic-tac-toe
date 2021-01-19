@@ -6,7 +6,7 @@
     width:100%;
     height: auto;
 }
-.heading-text {
+/* .heading-text {
     color: rgb(14, 10, 10);
     font-size: 42px;
     font-weight: bolder;
@@ -21,11 +21,11 @@
 
   .apptext-2 {
     color: #4ddb40;
-  }
+  } */
 
 .scorecard{
     width:200px;
-    padding:30px 0;
+    padding:50px 0;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
@@ -35,7 +35,7 @@
 .scorecard__shadow{
     padding: 10px 20px;
     border-radius: 10px ;
-    box-shadow: 2px 2px 5px black;
+    box-shadow: 2px 2px 5px gray;
 }
 
 .score{
@@ -43,20 +43,16 @@
 }
 .color1{
     font-size: 20px;
-    color: #3778fa;
+    font-weight: 700;
+    /* color: #3778fa; */
 }
 .color2{
     font-size: 20px;
-    color: #ef7536;
+    font-weight: 700;
+    /* color: #ef7536; */
 }
-.clear-button {
-    font-size: 20px;
-    width: 150px;
-    height: 30px;
-    background-color: #4ddb40;
-    border: none ;
-    border-radius: 20px;
-    margin: 40px auto 10px auto;
+.setting__icon{
+    margin-top: 40px;
 }
 
  @media only screen and (max-width: 600px) {

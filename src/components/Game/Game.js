@@ -1,5 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import Card from '../Card/Card'
+import Select from '../TestGame/Select'
+import GameSetting from '../TestGame/GameSetting'
 import './Game.css'
 
 const clearState = [];
@@ -8,8 +10,11 @@ function Game(){
 
     const [gameState, updateGameState] = useState(clearState)
     const [turn, updateTurn] = useState(false)
-    const [xUserWon, setXUserWon] = useState(0);
-    const [yUserWon, setYUserWon] = useState(0);
+    const [xUserScore, setXUserScore] = useState(0);
+    const [yUserScore, setYUserScore] = useState(0);
+
+    const player1 = 'Alex';
+    const player2 = 'AI';
 
     const handleOnClick = (index) => {
         let strings = Array.from(gameState);
@@ -29,7 +34,7 @@ function Game(){
         let winner = checkWinner();
         if (winner) {
             clearGame();
-            winner ==='X'? setXUserWon(xUserWon+1):setYUserWon(yUserWon+1)
+            winner ==='X'? setXUserScore(xUserScore+1):setYUserScore(yUserScore+1)
             console.log('winner',winner)
             alert(`Player ${winner} won this round`)
         }
@@ -57,19 +62,22 @@ function Game(){
 
     return(
         <div className="game">
-            <p className="heading-text">
+            <Select/>
+            {/* <p className="heading-text">
               <span className ="apptext-1">Career</span>
               <span className ="apptext-2">Ninja</span> - Assignment 2
-            </p>
+            </p> */}
             <span className='scorecard'>
-                <span className='score' >X won  </span>
+                <span className='score' >{player1? player1 :'X won'}  </span>
                 <span className='scorecard__shadow'>
-                <span className='color1'>{xUserWon}</span> - <span className='color2'>{yUserWon}</span>
+                <span className='color1'>{xUserScore}</span> - <span className='color2'>{yUserScore}</span>
                 </span>
-                <span className='score'>  Y won</span>
+                <span className='score'>{player2? player2 :'Y won'}</span>
             </span>
             <Card handleOnClick ={handleOnClick} gameState={gameState}/>
-            <button className="clear-button" onClick={clearGame}>Reset</button>
+            <span className="setting__icon" onClick={clearGame}> <GameSetting/></span>
+           
+            {/* <button className="clear-button" onClick={clearGame}><Setting/></button> */}
         </div>
     )
 }
